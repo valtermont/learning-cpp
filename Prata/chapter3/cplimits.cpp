@@ -19,14 +19,14 @@ int main() {
 	cout << "short: " << n_short << endl;
 	cout << "long: " << n_long << endl;
 	cout << "unsigned int: " << UINT_MAX << endl;
-	cout << "long long: " << LONG_LONG_MAX << endl;
-	cout << "unsigned long long: " << ULONG_LONG_MAX << endl;
+	cout << "long long: " << LLONG_MAX << endl;
+	cout << "unsigned long long: " << ULLONG_MAX << endl;
 	cout << "char: " << CHAR_MAX << endl;
 	
 	cout << endl << "Minimum int value = " << INT_MIN << endl;
 	cout << "Minimum short value = " << SHRT_MIN << endl;
 	cout << "Minimum long value = " << LONG_MIN << endl;
-	cout << "Minimum long long value = " << LONG_LONG_MIN << endl;
+	cout << "Minimum long long value = " << LLONG_MIN << endl;
 	cout << "Minimum char value = " << CHAR_MIN << endl;
 	
 	cout << endl << "Bits per byte = " << CHAR_BIT << endl;	
