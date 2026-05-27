@@ -31,7 +31,7 @@ int main()
             bookSumByYears[j] += bookCounts[i][j];
             bookSum += bookCounts[i][j];
         }
-        std::cout << "You sold " << bookSum << " books in " << j+1 << " year.\n\n";
+        std::cout << "You sold " << bookSumByYears[j] << " books in " << j+1 << " year.\n\n";
     }
 
     std::cout << "\nSummary, you sold " << bookSum << " books.\n";
