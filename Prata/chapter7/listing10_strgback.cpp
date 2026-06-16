@@ -1,0 +1,34 @@
+#include <iostream>
+
+char* buildstr(char c, int n);
+
+int main()
+{
+    char ch;
+    std::cout << "Enter a character: ";
+    std::cin >> ch;
+
+    int times;
+    std::cout << "Enter an integer: ";
+    std::cin >> times;
+
+    char* ps = buildstr(ch, times);
+    std::cout << ps << '\n';
+    delete[] ps;
+
+    ps = buildstr('+', 20);
+    std::cout << ps << "-DONE-" << ps << '\n';
+    delete[] ps;
+
+    return 0;
+}
+
+char* buildstr(char c, int n)
+{
+    char* pstr = new char[n+1];
+    pstr[n] = '\0';
+    while (n-- > 0)
+        pstr[n] = c;
+
+    return pstr;
+}
